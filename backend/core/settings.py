@@ -29,6 +29,9 @@ INSTALLED_APPS = [
 
     # externals
     'rest_framework',
+
+    # internals
+    'messages_application',
 ]
 
 MIDDLEWARE = [
