@@ -1,0 +1,6 @@
+# setup
+> docker compose up --build
+
+# consumers
+> ws://0.0.0.0:8000/ws/chat/ < backend/messages_application/consumers.py
+> ws://0.0.0.0:8000/ws/health_check/ < backend/messages_application/consumers.py
