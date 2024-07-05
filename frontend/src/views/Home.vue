@@ -20,7 +20,7 @@ const handleSendMessage = (message) => {
 };
 
 onMounted(() => {
-  websocket = new WebSocket('ws://127.0.0.1:8000/ws/chat/');
+  websocket = new WebSocket('ws://0.0.0.0:8000/ws/chat/');
 
   websocket.onmessage = (event) => {
     const data = JSON.parse(event.data);
